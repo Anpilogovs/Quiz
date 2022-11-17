@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F32D7D3A2926188B00ED2367 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32D7D392926188B00ED2367 /* Answer.swift */; };
+		F32D7D3C292618F000ED2367 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32D7D3B292618F000ED2367 /* ResponseType.swift */; };
+		F32D7D3E2926197C00ED2367 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32D7D3D2926197C00ED2367 /* AnimalType.swift */; };
 		F34F71AB292597F0005666B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34F71AA292597F0005666B5 /* AppDelegate.swift */; };
 		F34F71AD292597F0005666B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34F71AC292597F0005666B5 /* SceneDelegate.swift */; };
 		F34F71AF292597F0005666B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34F71AE292597F0005666B5 /* ViewController.swift */; };
 		F34F71B2292597F0005666B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34F71B0292597F0005666B5 /* Main.storyboard */; };
 		F34F71B4292597F2005666B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F34F71B3292597F2005666B5 /* Assets.xcassets */; };
 		F34F71B7292597F2005666B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34F71B5292597F2005666B5 /* LaunchScreen.storyboard */; };
+		F34F71C229259F54005666B5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34F71C129259F54005666B5 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F32D7D392926188B00ED2367 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		F32D7D3B292618F000ED2367 /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
+		F32D7D3D2926197C00ED2367 /* AnimalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
 		F34F71A7292597F0005666B5 /* Personal Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F34F71AA292597F0005666B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F34F71AC292597F0005666B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,8 @@
 		F34F71B3292597F2005666B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F34F71B6292597F2005666B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F34F71B8292597F2005666B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F34F71C129259F54005666B5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		F34F71C52925A00C005666B5 /* libinfo.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libinfo.tbd; path = usr/lib/libinfo.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +51,7 @@
 			children = (
 				F34F71A9292597F0005666B5 /* Personal Quiz */,
 				F34F71A8292597F0005666B5 /* Products */,
+				F34F71C42925A00C005666B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +66,59 @@
 		F34F71A9292597F0005666B5 /* Personal Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				F34F71AA292597F0005666B5 /* AppDelegate.swift */,
-				F34F71AC292597F0005666B5 /* SceneDelegate.swift */,
-				F34F71AE292597F0005666B5 /* ViewController.swift */,
-				F34F71B0292597F0005666B5 /* Main.storyboard */,
+				F34F71C029259F4A005666B5 /* Model */,
+				F34F71BF29259F40005666B5 /* View */,
+				F34F71C329259F6A005666B5 /* Suporting Files */,
+				F34F71BE29259F39005666B5 /* Controller */,
 				F34F71B3292597F2005666B5 /* Assets.xcassets */,
-				F34F71B5292597F2005666B5 /* LaunchScreen.storyboard */,
 				F34F71B8292597F2005666B5 /* Info.plist */,
 			);
 			path = "Personal Quiz";
+			sourceTree = "<group>";
+		};
+		F34F71BE29259F39005666B5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F34F71AE292597F0005666B5 /* ViewController.swift */,
+				F34F71AC292597F0005666B5 /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F34F71BF29259F40005666B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F34F71B5292597F2005666B5 /* LaunchScreen.storyboard */,
+				F34F71B0292597F0005666B5 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F34F71C029259F4A005666B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F34F71C129259F54005666B5 /* Question.swift */,
+				F32D7D392926188B00ED2367 /* Answer.swift */,
+				F32D7D3D2926197C00ED2367 /* AnimalType.swift */,
+				F32D7D3B292618F000ED2367 /* ResponseType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F34F71C329259F6A005666B5 /* Suporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F34F71AA292597F0005666B5 /* AppDelegate.swift */,
+			);
+			path = "Suporting Files";
+			sourceTree = "<group>";
+		};
+		F34F71C42925A00C005666B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F34F71C52925A00C005666B5 /* libinfo.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +193,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F34F71AF292597F0005666B5 /* ViewController.swift in Sources */,
+				F34F71C229259F54005666B5 /* Question.swift in Sources */,
+				F32D7D3C292618F000ED2367 /* ResponseType.swift in Sources */,
+				F32D7D3A2926188B00ED2367 /* Answer.swift in Sources */,
 				F34F71AB292597F0005666B5 /* AppDelegate.swift in Sources */,
 				F34F71AD292597F0005666B5 /* SceneDelegate.swift in Sources */,
+				F32D7D3E2926197C00ED2367 /* AnimalType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
