@@ -13,7 +13,7 @@ enum AnimalType: String {
     case rabbit = "🐰"
     case turtle = "🐢"
     
-    var difinition: String {
+    var definition: String {
         
         switch self {
         case .dog:
